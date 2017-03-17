@@ -1,0 +1,100 @@
+<!-- Payload 1: Verifying validating activity, Invalid Customer Type -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">    
+    <CustomerID></CustomerID>    
+    <FirstName>S.N.</FirstName>
+    <LastName>RAO</LastName>
+    <Email>abc@gmail.com</Email>   
+    <Phone>+91 9999999999</Phone>
+    <DOB>1976-09-29</DOB>
+    <CustomerType>Invalid Cust Type</CustomerType>
+    <Address1>Hi-Tech City</Address1>
+    <Address2>Mdahapur</Address2>
+    <Address3>Hyderabad</Address3>
+    <State>Andhra Pradesh</State>  
+    <Country>India</Country>    
+    <ZipCode>500031</ZipCode>
+</cus:Customer>
+
+<!-- Payload 2: Verifying validating activity, Invalid Sequence of elements -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">    
+    <CustomerID></CustomerID>    
+    <FirstName>S.N.</FirstName>
+    <LastName>RAO</LastName>
+    <Email>abc@gmail.com</Email>   
+    <Phone>+91 9999999999</Phone>
+    <CustomerType>Individual</CustomerType>
+	<DOB>1976-09-29</DOB>    
+    <Address1>Hi-Tech City</Address1>
+    <Address2>Mdahapur</Address2>
+    <Address3>Hyderabad</Address3>
+    <State>Andhra Pradesh</State>  
+    <Country>India</Country>    
+    <ZipCode>500031</ZipCode>
+</cus:Customer>
+
+<!-- Payload 3: Verifying Email format, Invalid email -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">    
+    <CustomerID></CustomerID>    
+    <FirstName>S.N.</FirstName>
+    <LastName>RAO</LastName>
+    <Email>abc@gmail</Email>   
+    <Phone>+91 9999999999</Phone>
+    <DOB>1976-09-29</DOB>    
+	<CustomerType>Individual</CustomerType>	
+    <Address1>Hi-Tech City</Address1>
+    <Address2>Mdahapur</Address2>
+    <Address3>Hyderabad</Address3>
+    <State>Andhra Pradesh</State>  
+    <Country>India</Country>    
+    <ZipCode>500031</ZipCode>
+</cus:Customer>
+
+<!-- Payload 4: Verifying Email format, Invalid email -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">    
+    <CustomerID></CustomerID>    
+    <FirstName>S.N.</FirstName>
+    <LastName>RAO</LastName>
+    <Email>abc.gmail</Email>   
+    <Phone>+91 9999999999</Phone>
+    <DOB>1976-09-29</DOB>    
+	<CustomerType>Individual</CustomerType>	
+    <Address1>Hi-Tech City</Address1>
+    <Address2>Mdahapur</Address2>
+    <Address3>Hyderabad</Address3>
+    <State>Andhra Pradesh</State>  
+    <Country>India</Country>    
+    <ZipCode>500031</ZipCode>
+</cus:Customer>
+
+<!-- Payload 5: Customer Type Defaulting -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">    
+    <CustomerID></CustomerID>    
+    <FirstName>S.N.</FirstName>
+    <LastName>RAO</LastName>
+    <Email>abc@gmail.com</Email>   
+    <Phone>+91 9999999999</Phone>
+    <DOB>1976-09-29</DOB>    	
+    <Address1>Hi-Tech City</Address1>
+    <Address2>Mdahapur</Address2>
+    <Address3>Hyderabad</Address3>
+    <State>Andhra Pradesh</State>  
+    <Country>India</Country>    
+    <ZipCode>500031</ZipCode>
+</cus:Customer>
+
+<!-- Payload 6: Positive/Negative Case -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">    
+    <CustomerID></CustomerID>    
+    <FirstName>S.N.</FirstName>
+    <LastName>RAO</LastName>
+    <Email>abc@gmail.com</Email>   
+    <Phone>+91 9999999999</Phone>
+    <DOB>1976-09-29</DOB>    
+	<CustomerType>Individual</CustomerType>	
+    <Address1>Hi-Tech City</Address1>
+    <Address2>Mdahapur</Address2>
+    <Address3>Hyderabad</Address3>
+    <State>Andhra Pradesh</State>  
+    <Country>India</Country>    
+    <ZipCode>500031</ZipCode>
+</cus:Customer>

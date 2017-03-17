@@ -1,0 +1,55 @@
+<!-- Payload 1: Verifying validating activity, Invalid Customer Type -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">    
+    <CustomerID>AHHHHH8787QDJHJH299</CustomerID>    
+    <FirstName>S.N.</FirstName>
+    <LastName>RAO RAO</LastName>
+    <CustomerType>Invalid Cust Type</CustomerType>
+</cus:Customer>
+
+<!-- Payload 2: Verifying Email format, Invalid email -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">    
+    <CustomerID>AHHHHH8787QDJHJH299</CustomerID>    
+    <Email>abc@gmail</Email>   
+</cus:Customer>
+
+<!-- Payload 3: Verifying Email format, Invalid email -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">    
+    <CustomerID>AHHHHH8787QDJHJH299</CustomerID>        
+    <Email>abc.gmail</Email>   
+</cus:Customer>
+
+<!-- Payload 4: Customer ID Validation -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">    
+    <CustomerID></CustomerID>    
+    <FirstName>S.N.</FirstName>
+    <LastName>RAO</LastName>
+    <Email>abc@gmail.com</Email>       
+</cus:Customer>
+
+<!-- Payload 5: Customer ID Validation -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">         
+    <FirstName>S.N.</FirstName>
+    <LastName>RAO</LastName>
+    <Email>abc@gmail.com</Email>       
+</cus:Customer>
+
+<!-- Payload 6: Positive Case -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">    
+    <CustomerID>AHHHHH8787QDJHJH299</CustomerID>    
+    <FirstName>S.N.R.</FirstName>
+    <LastName>RAO</LastName>
+    <Email>abcnew@gmail.com</Email>   
+    <Phone>+91 8888888888</Phone>
+    <DOB>1986-09-29</DOB>    
+</cus:Customer>
+
+<!-- Payload 7: Positive Case -->
+<cus:Customer xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">    
+    <CustomerID>AHHHHH8787QDJHJH299</CustomerID>        
+    <Address1>Hi-Tech City, 2nd Phase</Address1>
+    <Address2>Mdahapur</Address2>
+    <Address3>Hyderabad</Address3>
+    <State>Andhra Pradesh</State>  
+    <Country>India</Country>    
+    <ZipCode>500081</ZipCode>
+</cus:Customer>

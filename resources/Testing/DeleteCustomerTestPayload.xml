@@ -1,0 +1,13 @@
+<!-- Payload 1: Verifying validating activity, No Customer ID element -->
+<cus:CustomerIDInput xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">
+</cus:CustomerIDInput>
+
+<!-- Payload 2: Verifying CustomerID with no value -->
+<cus:CustomerIDInput xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">
+  <CustomerID></CustomerID>  
+</cus:CustomerIDInput>
+
+<!-- Payload 3: Positive/Negative Case -->
+<cus:CustomerIDInput xmlns:cus="http://xmlns.xyzbank.com/schema/Customer">
+  <CustomerID>AHHHHH8787QDJHJH299</CustomerID>  
+</cus:CustomerIDInput>
